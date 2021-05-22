@@ -11,7 +11,7 @@
  "fields": [
   {
    "fieldname": "url",
-   "fieldtype": "Attach",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "URL",
    "reqd": 1
@@ -23,10 +23,9 @@
    "label": "Note"
   }
  ],
- "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-22 13:54:25.861764",
+ "modified": "2021-05-22 15:33:30.084824",
  "modified_by": "Administrator",
  "module": "Bundler",
  "name": "URL Table",

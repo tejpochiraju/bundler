@@ -32,7 +32,7 @@
   },
   {
    "fieldname": "password",
-   "fieldtype": "Password",
+   "fieldtype": "Data",
    "label": "Password"
   },
   {
@@ -41,7 +41,7 @@
   }
  ],
  "links": [],
- "modified": "2021-05-22 14:06:48.702897",
+ "modified": "2021-05-22 14:23:13.393139",
  "modified_by": "Administrator",
  "module": "Bundler",
  "name": "Bundle",

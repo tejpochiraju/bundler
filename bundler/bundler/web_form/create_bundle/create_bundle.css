@@ -1,0 +1,15 @@
+.page-breadcrumbs {
+    display: none;
+}
+
+.form-column.col-sm-6 .form-grid .btn-open-row .edit-grid-row {
+    font-size: 0;
+}
+
+.row-index {
+    display: none;
+}
+
+.grid-body .btn-open-row {
+    display: none;
+}

@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><a data-toggle="tooltip" data-placement="top" title="Copy link to share" href="/view?id={{bundle.name}}&key={{bundle.password}}">{{ bundle.title }}</a></h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ bundle.description }}</h6>
+        <ul class="list-group list-group-flush">
+            {% for row in bundle.urls %}
+            <li class="list-group-item">
+                <a target="_blank" href="{{row.url}}">{{row.note or row.url}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% if frappe.session.user == bundle.owner %}
+            <a href="/create-bundle?name={{bundle.name}}" class="card-link font-weight-light text-danger">Edit</a>
+        {% endif %}
+    </div>
+</div>
