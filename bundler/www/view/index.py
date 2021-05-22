@@ -5,6 +5,8 @@ def get_context(context):
     name = params.get('id')
     if name:
         password = params.get('key')
+        if not password:
+            password = ''
         context.bundles = [frappe.get_doc('Bundle', {'name': name, 'password': password}, ignore_permissions=True)]
         return
     if frappe.session.user == 'Guest':
